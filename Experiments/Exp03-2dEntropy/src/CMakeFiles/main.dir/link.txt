@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/main.dir/utils/samples.cpp.o CMakeFiles/main.dir/cuda/main_generated_cuda_2dEntropy.cu.o CMakeFiles/main.dir/main_generated_main.cu.o  -o main /usr/lib/x86_64-linux-gnu/libcudart_static.a -lpthread -ldl /usr/lib/x86_64-linux-gnu/librt.so 

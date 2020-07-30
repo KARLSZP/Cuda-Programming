@@ -1,0 +1,17 @@
+{
+    "files.associations": {
+        "*.asm": "asm",
+        "*.cu": "cpp",
+        "*.cuh": "cpp",
+        "random": "cpp",
+        "algorithm": "cpp",
+        "array": "cpp",
+        "deque": "cpp",
+        "string": "cpp",
+        "vector": "cpp",
+        "initializer_list": "cpp",
+        "unordered_map": "cpp",
+        "iterator": "cpp",
+        "string_view": "cpp"
+    }
+}

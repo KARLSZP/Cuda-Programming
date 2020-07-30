@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/karl/Coding/Cuda-Programming/Experiments/Exp03-2dEntropy/src/utils/samples.cpp
+samples.h
+/home/karl/Coding/Cuda-Programming/Experiments/Exp03-2dEntropy/src/utils/samples.h
+
+/home/karl/Coding/Cuda-Programming/Experiments/Exp03-2dEntropy/src/utils/samples.h
+stdio.h
+-
+stdlib.h
+-
+

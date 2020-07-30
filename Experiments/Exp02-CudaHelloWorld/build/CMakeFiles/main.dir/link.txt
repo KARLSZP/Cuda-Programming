@@ -1,0 +1,1 @@
+/usr/bin/g++-4.8     CMakeFiles/main.dir/main_generated_main.cu.o CMakeFiles/main.dir/cuda/main_generated_cuda_HelloWorld.cu.o  -o main /usr/lib/x86_64-linux-gnu/libcudart_static.a -lpthread -ldl /usr/lib/x86_64-linux-gnu/librt.so 

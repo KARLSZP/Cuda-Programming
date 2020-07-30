@@ -1,0 +1,3 @@
+/home/karl/Coding/Cuda-Programming/scaffold-hw2-v2/build/CMakeFiles/rebuild_cache.dir
+/home/karl/Coding/Cuda-Programming/scaffold-hw2-v2/build/CMakeFiles/main.dir
+/home/karl/Coding/Cuda-Programming/scaffold-hw2-v2/build/CMakeFiles/edit_cache.dir

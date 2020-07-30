@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/karl/Coding/Cuda-Programming/Experiments/Exp03-2dEntropy/src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5f97d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5f97d.dir/build.make CMakeFiles/cmTC_5f97d.dir/build
+make[1]: 进入目录“/home/karl/Coding/Cuda-Programming/Experiments/Exp03-2dEntropy/src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_5f97d.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -fPIC    -o CMakeFiles/cmTC_5f97d.dir/CheckSymbolExists.c.o   -c /home/karl/Coding/Cuda-Programming/Experiments/Exp03-2dEntropy/src/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_5f97d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5f97d.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC     CMakeFiles/cmTC_5f97d.dir/CheckSymbolExists.c.o  -o cmTC_5f97d 
+CMakeFiles/cmTC_5f97d.dir/CheckSymbolExists.c.o：在函数‘main’中：
+CheckSymbolExists.c:(.text+0x1b)：对‘pthread_create’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_5f97d.dir/build.make:97: recipe for target 'cmTC_5f97d' failed
+make[1]: *** [cmTC_5f97d] Error 1
+make[1]: 离开目录“/home/karl/Coding/Cuda-Programming/Experiments/Exp03-2dEntropy/src/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_5f97d/fast' failed
+make: *** [cmTC_5f97d/fast] Error 2
+
+File /home/karl/Coding/Cuda-Programming/Experiments/Exp03-2dEntropy/src/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/karl/Coding/Cuda-Programming/Experiments/Exp03-2dEntropy/src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_eeb36/fast"
+/usr/bin/make -f CMakeFiles/cmTC_eeb36.dir/build.make CMakeFiles/cmTC_eeb36.dir/build
+make[1]: 进入目录“/home/karl/Coding/Cuda-Programming/Experiments/Exp03-2dEntropy/src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_eeb36.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_eeb36.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_eeb36
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eeb36.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_eeb36.dir/CheckFunctionExists.c.o  -o cmTC_eeb36 -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_eeb36.dir/build.make:97: recipe for target 'cmTC_eeb36' failed
+make[1]: *** [cmTC_eeb36] Error 1
+make[1]: 离开目录“/home/karl/Coding/Cuda-Programming/Experiments/Exp03-2dEntropy/src/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_eeb36/fast' failed
+make: *** [cmTC_eeb36/fast] Error 2
+
+
